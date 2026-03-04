@@ -1,6 +1,6 @@
 import './App.css';
-import Heading from './components/Heading.tsx';
-import TeamsList from './components/TeamsList.tsx';
+import Heading from './components/Heading';
+import TeamsList from './components/TeamsList';
 
 // Main App component that serves as the root of the application
 function App() {
@@ -12,16 +12,5 @@ function App() {
   );
 }
 
-export default App;import Heading from './components/Heading.tsx';
-import TeamsList from './components/TeamsList.tsx';
-
-function App() {
-  return (
-    <div className="App">
-      <Heading />
-      <TeamsList />
-    </div>
-  );
-}
-
 export default App;
+
