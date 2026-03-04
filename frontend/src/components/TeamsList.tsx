@@ -1,17 +1,16 @@
 import React from 'react';
 import TeamCard from './TeamCard';
-import teamsData from '../CollegeBasketballTeams.json';
+import teamsDataRaw from '../CollegeBasketballTeams.json';
 
 type Team = {
   school: string;
   name: string;
   city: string;
   state: string;
-  // add other fields here if they exist in the JSON, but these are the ones we need
 };
 
 const TeamsList: React.FC = () => {
-  const teams = teamsData as Team[];
+  const teams: Team[] = Array.isArray(teamsDataRaw) ? teamsDataRaw : [];
 
   return (
     <section className="teams-list">
@@ -29,3 +28,4 @@ const TeamsList: React.FC = () => {
 };
 
 export default TeamsList;
+

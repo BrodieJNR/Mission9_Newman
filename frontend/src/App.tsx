@@ -1,6 +1,6 @@
 import './App.css';
-import Heading from './components/Heading';
-import TeamsList from './components/TeamsList';
+import Heading from './components/Heading.tsx';
+import TeamsList from './components/TeamsList.tsx';
 
 function App() {
   return (
@@ -12,5 +12,3 @@ function App() {
 }
 
 export default App;
-
-
